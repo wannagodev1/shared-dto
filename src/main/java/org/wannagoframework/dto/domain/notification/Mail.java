@@ -48,7 +48,7 @@ public class Mail extends BaseEntityStrId {
 
   private MailStatusEnum mailStatus;
 
-  private MailActionEnum mailAction;
+  private String mailAction;
 
   private String errorMessage;
 

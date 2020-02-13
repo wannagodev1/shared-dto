@@ -51,5 +51,5 @@ public class MailTemplate extends BaseEntityStrId {
   private String iso3Language;
 
   @NotNull
-  private MailActionEnum mailAction;
+  private String mailAction;
 }
