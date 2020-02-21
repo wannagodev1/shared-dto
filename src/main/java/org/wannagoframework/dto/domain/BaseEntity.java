@@ -29,7 +29,7 @@ import lombok.EqualsAndHashCode;
  * @since 2019-03-06
  */
 @Data
-@EqualsAndHashCode(exclude = {"createdBy", "modifiedBy", "created", "modified", "version"})
+@EqualsAndHashCode(exclude = {"createdBy", "modifiedBy", "created", "modified"})
 public abstract class BaseEntity implements Serializable {
 
   /**
