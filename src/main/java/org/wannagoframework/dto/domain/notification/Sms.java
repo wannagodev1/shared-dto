@@ -17,6 +17,7 @@
 
 package org.wannagoframework.dto.domain.notification;
 
+import java.util.Map;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -38,9 +39,15 @@ public class Sms extends BaseEntityStrId {
 
   private SmsStatusEnum smsStatus;
 
+  private String smsAction;
+
+  private Map<String, String> attributes;
+
   private String errorMessage;
 
   private int nbRetry = 0;
 
   private String applicationName;
+
+  private String iso3Language;
 }
