@@ -35,7 +35,8 @@ import org.wannagoframework.dto.serviceQuery.BaseRemoteQuery;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class CountAnyMatchingQuery extends BaseRemoteQuery implements Serializable {
+  protected String filter;
+  protected Boolean showInactive;
 
-  private String filter;
-  private Boolean showInactive;
+
 }

@@ -37,7 +37,7 @@ import org.wannagoframework.dto.utils.Pageable;
 @EqualsAndHashCode(callSuper = true)
 public class FindAnyMatchingQuery extends BaseRemoteQuery implements Serializable {
 
-  private String filter;
-  private Boolean showInactive;
-  private Pageable pageable;
+  protected String filter;
+  protected Boolean showInactive;
+  protected Pageable pageable;
 }
