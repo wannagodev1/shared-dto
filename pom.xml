@@ -42,7 +42,7 @@
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
 
     <!-- Dependencies -->
-    <lombok.version>1.18.10</lombok.version>
+    <lombok.version>1.18.12</lombok.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
     <jackson-annotations.version>2.9.9</jackson-annotations.version>
     <spring-security-oauth2.version>5.1.6.RELEASE</spring-security-oauth2.version>
