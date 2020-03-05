@@ -46,6 +46,8 @@ public class BaseUser extends BaseEntityLongId implements Serializable {
 
   private String lastName;
 
+  private String fullName;
+
   private String nickName;
 
   private StoredFile avatar = null;

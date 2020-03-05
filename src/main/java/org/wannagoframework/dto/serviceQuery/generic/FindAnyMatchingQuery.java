@@ -36,7 +36,6 @@ import org.wannagoframework.dto.utils.Pageable;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class FindAnyMatchingQuery extends BaseRemoteQuery implements Serializable {
-
   protected String filter;
   protected Boolean showInactive;
   protected Pageable pageable;
