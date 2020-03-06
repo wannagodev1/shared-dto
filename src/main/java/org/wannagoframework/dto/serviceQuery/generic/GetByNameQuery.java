@@ -15,32 +15,28 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.wannagoframework.dto.domain.notification;
 
+package org.wannagoframework.dto.serviceQuery.generic;
+
+import java.io.Serializable;
 import javax.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
-import org.wannagoframework.dto.domain.BaseEntityStrId;
+import lombok.NoArgsConstructor;
+import org.wannagoframework.dto.serviceQuery.BaseRemoteQuery;
 
 /**
  * @author WannaGo Dev1.
  * @version 1.0
- * @since 2019-02-22
+ * @since 2019-06-02
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
-public class SmsTemplate extends BaseEntityStrId {
+public class GetByNameQuery extends BaseRemoteQuery implements Serializable {
 
   @NotNull
   private String name;
-
-  @NotNull
-  private String body;
-
-  private String iso3Language;
-
-  @NotNull
-  private String smsAction;
 }
