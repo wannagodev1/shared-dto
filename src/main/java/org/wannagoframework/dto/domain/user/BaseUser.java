@@ -20,6 +20,7 @@ import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import org.springframework.util.StringUtils;
 import org.wannagoframework.dto.domain.BaseEntityLongId;
 import org.wannagoframework.dto.utils.StoredFile;
 
@@ -53,4 +54,17 @@ public class BaseUser extends BaseEntityLongId implements Serializable {
   private StoredFile avatar = null;
 
   private String avatarId = null;
+
+  public String getFullName() {
+    if (StringUtils.isEmpty( fullName )) {
+      String fullName = "";
+      if ( ! StringUtils.isEmpty( firstName ))
+        fullName += firstName;
+      fullName+=" ";
+      if ( ! StringUtils.isEmpty( lastName ))
+        fullName += lastName;
+      return fullName.trim();
+    } else
+      return fullName;
+  }
 }
