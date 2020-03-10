@@ -20,6 +20,7 @@ package org.wannagoframework.dto.utils;
 
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -29,6 +30,7 @@ import lombok.NoArgsConstructor;
  * @since 2019-06-02
  */
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class LatLng implements Serializable {
