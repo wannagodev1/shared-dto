@@ -23,8 +23,8 @@ jobs:
       run: mvn -Dmaven.test.skip -s .settings.xml -Dmaven.javadoc.skip -Dossrh_username=${{secrets.ossrh_username}} -Dossrh_password=${{secrets.ossrh_password}} --file pom.xml deploy
     - name: Repository Dispatch
       uses: peter-evans/repository-dispatch@v1
+      repository: wannaenjoy1/shared-common
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         event-type: shared-dto-build
-        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
-
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}
