@@ -27,4 +27,4 @@ jobs:
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         event-type: shared-dto-build
-        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
