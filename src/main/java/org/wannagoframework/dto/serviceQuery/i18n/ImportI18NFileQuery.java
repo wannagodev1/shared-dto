@@ -16,31 +16,25 @@
  */
 
 
-package org.wannagoframework.dto.domain.i18n;
+package org.wannagoframework.dto.serviceQuery.i18n;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
-import org.wannagoframework.dto.domain.BaseEntityLongId;
+import lombok.NoArgsConstructor;
+import org.wannagoframework.dto.serviceQuery.BaseRemoteQuery;
 
 /**
  * @author WannaGo Dev1.
  * @version 1.0
- * @since 2019-04-18
+ * @since 2019-06-02
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
-public class Element extends BaseEntityLongId implements Serializable {
+public class ImportI18NFileQuery extends BaseRemoteQuery implements Serializable {
 
-  private String name;
-
-  private String category;
-
-  private Boolean isTranslated = Boolean.FALSE;
-
-  private List<ElementTrl> translations = new ArrayList<>();
+  private Byte[] fileContent;
 }

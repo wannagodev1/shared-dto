@@ -38,6 +38,8 @@ public class Message extends BaseEntityLongId implements Serializable {
 
   private String name;
 
+  private String category;
+
   private Boolean isTranslated = Boolean.FALSE;
 
   private List<MessageTrl> translations = new ArrayList<>();
