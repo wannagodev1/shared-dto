@@ -17,11 +17,37 @@
 
 package org.wannagoframework.dto.domain.notification;
 
+import java.util.Map;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import org.wannagoframework.dto.domain.BaseEntityStrId;
+
 /**
  * @author WannaGo Dev1.
  * @version 1.0
- * @since 2019-02-22
+ * @since 2019-07-09
  */
-public enum SmsStatusEnum {
-  NOT_SENT, SENT, ERROR, RETRYING;
+@Data
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
+public class CloudDataMessage extends BaseEntityStrId {
+
+  private String deviceToken;
+
+  private String data;
+
+  private CloudDataMessageStatusEnum cloudDataMessageStatus;
+
+  private String cloudDataMessageAction;
+
+  private Map<String, String> attributes;
+
+  private String errorMessage;
+
+  private int nbRetry = 0;
+
+  private String applicationName;
+
+  private String iso3Language;
 }

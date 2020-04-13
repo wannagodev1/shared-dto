@@ -36,7 +36,6 @@ public class SmsTemplate extends BaseEntityStrId {
   @NotNull
   private String name;
 
-  @NotNull
   private String body;
 
   private String iso3Language;

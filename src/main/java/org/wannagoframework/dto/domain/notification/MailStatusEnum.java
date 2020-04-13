@@ -23,5 +23,5 @@ package org.wannagoframework.dto.domain.notification;
  * @since 2019-02-22
  */
 public enum MailStatusEnum {
-  NOT_SENT, SENT, ERROR;
+  NOT_SENT, SENT, ERROR, RETRYING;
 }

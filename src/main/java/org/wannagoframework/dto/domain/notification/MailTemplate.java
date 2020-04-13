@@ -36,10 +36,8 @@ public class MailTemplate extends BaseEntityStrId {
   @NotNull
   private String name;
 
-  @NotNull
   private String subject;
 
-  @NotNull
   private String body;
 
   private String bodyHtml;

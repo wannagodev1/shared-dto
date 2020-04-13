@@ -22,6 +22,6 @@ package org.wannagoframework.dto.domain.notification;
  * @version 1.0
  * @since 2019-02-22
  */
-public enum SmsStatusEnum {
+public enum CloudDataMessageStatusEnum {
   NOT_SENT, SENT, ERROR, RETRYING;
 }
