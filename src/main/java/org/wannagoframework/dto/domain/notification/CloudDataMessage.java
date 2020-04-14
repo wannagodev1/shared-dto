@@ -37,6 +37,8 @@ public class CloudDataMessage extends BaseEntityStrId {
 
   private String data;
 
+  private String topic;
+
   private CloudDataMessageStatusEnum cloudDataMessageStatus;
 
   private String cloudDataMessageAction;
