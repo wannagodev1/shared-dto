@@ -16,33 +16,27 @@
  */
 
 
-package org.wannagoframework.dto.domain.audit;
+package org.wannagoframework.dto.serviceQuery.group;
 
 import java.io.Serializable;
+import javax.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
-import org.wannagoframework.dto.domain.BaseEntityStrId;
+import lombok.NoArgsConstructor;
+import org.wannagoframework.dto.serviceQuery.BaseRemoteQuery;
 
 /**
  * @author WannaGo Dev1.
  * @version 1.0
- * @since 2019-05-24
+ * @since 2019-06-02
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
-public class ChangeLog extends BaseEntityStrId implements Serializable {
+public class GetByCompanyIdQuery extends BaseRemoteQuery implements Serializable {
 
-  private String entity;
-
-  private Long recordId;
-
-  private Session session;
-
-  private String attribute;
-
-  private String oldValue;
-
-  private String newValue;
+  @NotNull
+  private Long companyId;
 }
